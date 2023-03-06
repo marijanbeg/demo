@@ -26,5 +26,8 @@ jobs:
         activate-environment: conda-environment
         environment-file: .github/environment.yml
 
+    - name: Install deps
+      run: pip install pytest
+
     - name: Unit tests
       run: pytest
